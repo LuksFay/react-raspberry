@@ -14,10 +14,12 @@ function App() {
     <div className='bg-indigo-600 w-full h-screen'>
     <BrowserRouter>
     	<Navbar />
-    	<Routes>
-    		<Route path="/" element={<Home />} />
-    		<Route path="/about" element={<About />} />
-    	</Routes>
+    	<div>
+		  	<Routes>
+		  		<Route path="/" element={<Home />} />
+		  		<Route path="/about" element={<About />} />
+		  	</Routes>
+    	</div>
     </BrowserRouter>
     </div>
   );
