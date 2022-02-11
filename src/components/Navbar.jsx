@@ -18,12 +18,12 @@ export default function Navbar(){
 				<div onClick={()=>setOpen(!open)} className='text-3x1 absolute right-8 top-6 cursor-pointer md:hidden'>
 					<ion-icon name={open ? 'close' : 'menu'}></ion-icon>
 				</div>
-				<ul className='md:flex md:items-center md:pb-0 pb-12 absolute md:static bg-white md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in'>
+				<ul className={`md:flex md:items-center md:pb-0 pb-12 absolute md:static bg-white md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${open ? 'top-20 opacity-100' : 'top-[-490px]'} md:opacity-100 opacity-0`}>
 				<li className='md:ml-8 text-xl md:my-0 my-7'>
-					<NavLink className='text-gray-800 hover:text-gray-400 duration-500' to='/'>Home</NavLink>
+					<NavLink className='text-gray-800 hover:text-gray-400 duration-500' onClick={()=>setOpen(!open)} to='/'>HOME</NavLink>
 				</li>
 				<li>
-					<NavLink className='text-gray-800 hover:text-gray-400 duration-500' to='/about'>About</NavLink>				
+					<NavLink className='text-gray-800 hover:text-gray-400 duration-500' onClick={()=>setOpen(!open)} to='/about'>ABOUT</NavLink>				
 				</li>
 			</ul>	
 			</div>
