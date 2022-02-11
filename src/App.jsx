@@ -11,15 +11,15 @@ import {
 
 function App() {
   return (
-    <>
-    <BrowserRouter className='bg-indigo-600 w-full h-screen'>
+    <div className='bg-indigo-600 w-full h-screen'>
+    <BrowserRouter>
     	<Navbar />
     	<Routes>
     		<Route path="/" element={<Home />} />
     		<Route path="/about" element={<About />} />
     	</Routes>
     </BrowserRouter>
-    </>
+    </div>
   );
 }
 
