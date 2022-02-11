@@ -12,7 +12,7 @@ import {
 function App() {
   return (
     <>
-    <BrowserRouter>
+    <BrowserRouter className='bg-indigo-600 w-full h-screen'>
     	<Navbar />
     	<Routes>
     		<Route path="/" element={<Home />} />
